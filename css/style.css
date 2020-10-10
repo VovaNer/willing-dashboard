@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif; }
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+.main {
+  display: flex;
+  height: 100vh; }
+  .main .sidebar {
+    width: 25%;
+    background: linear-gradient(to right, #436ADC, #3A74DC); }
+    .main .sidebar .logo {
+      padding: 30px 0 0 30px; }
+      .main .sidebar .logo img {
+        width: 40%;
+        margin-left: 20px; }
+    .main .sidebar .avatar {
+      padding: 30px; }
+      .main .sidebar .avatar .avatar__box {
+        padding: 40px 0 40px 75px;
+        background: url("../img/avatar.png") left center no-repeat;
+        color: #fff;
+        display: inline-block; }
+        .main .sidebar .avatar .avatar__box .avatar__name {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .main .sidebar .avatar .avatar__box .avatar__name h4 {
+            font-weight: 600; }
+          .main .sidebar .avatar .avatar__box .avatar__name img {
+            display: block;
+            width: 15px;
+            height: 10px;
+            cursor: pointer; }
+        .main .sidebar .avatar .avatar__box p {
+          margin-top: 10px;
+          padding: 10px 20px 0 0;
+          border-top: 1px solid rgba(55, 160, 234, 0.4);
+          font-weight: 300;
+          font-size: 16px; }
+    .main .sidebar .menu {
+      background-color: #EFF4FF;
+      font-size: 16px; }
+      .main .sidebar .menu .menu__list {
+        list-style: none;
+        padding: 10px 0; }
+        .main .sidebar .menu .menu__list .menu__link {
+          color: #878787;
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+          padding: 5px 0;
+          cursor: pointer; }
+          .main .sidebar .menu .menu__list .menu__link h4 {
+            font-weight: 500;
+            margin-left: 10px; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link1 {
+            background: url("../img/home.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link2 {
+            background: url("../img/documents.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link3 {
+            background: url("../img/contacts.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link4 {
+            background: url("../img/recordings.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link5 {
+            background: url("../img/user.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link6 {
+            background: url("../img/management.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link .menu__link7 {
+            background: url("../img/locations.png") center center no-repeat; }
+          .main .sidebar .menu .menu__list .menu__link:hover {
+            background: #EFF4FF;
+            box-shadow: 0px 0px 10px 0px rgba(67, 107, 220, 0.35); }
+            .main .sidebar .menu .menu__list .menu__link:hover .menu__elem {
+              border-color: #fff; }
+          .main .sidebar .menu .menu__list .menu__link .menu__elem {
+            width: 40px;
+            height: 30px;
+            border-left: 3px solid #EFF4FF;
+            padding-left: 10px;
+            margin-left: 10px; }
+        .main .sidebar .menu .menu__list .active {
+          background: linear-gradient(to right, #436ADC, #0CA6DB);
+          box-shadow: 0px 0px 10px 0px rgba(67, 107, 220, 0.35);
+          color: #fff; }
+          .main .sidebar .menu .menu__list .active .menu__elem {
+            border-left: 3px solid #fff;
+            -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+            filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); }
+          .main .sidebar .menu .menu__list .active:hover {
+            background: linear-gradient(to right, #436ADC, #0CA6DB); }
+  .main .screen {
+    width: 75%;
+    background-color: #944747; }
+
+/*# sourceMappingURL=style.css.map */
