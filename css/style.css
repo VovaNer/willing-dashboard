@@ -13,17 +13,19 @@ a, a:link, a:visited {
 
 .main {
   display: flex;
-  height: 100vh; }
+  min-height: 100vh; }
   .main .sidebar {
     width: 25%;
-    background: linear-gradient(to right, #436ADC, #3A74DC); }
+    background-color: #EFF4FF; }
     .main .sidebar .logo {
+      background: linear-gradient(to right, #436ADC, #3A74DC);
       padding: 30px 0 0 30px; }
       .main .sidebar .logo img {
         width: 40%;
         margin-left: 20px; }
     .main .sidebar .avatar {
-      padding: 30px; }
+      padding: 30px;
+      background: linear-gradient(to right, #436ADC, #3A74DC); }
       .main .sidebar .avatar .avatar__box {
         padding: 40px 0 40px 75px;
         background: url("../img/avatar.png") left center no-repeat;
@@ -47,7 +49,6 @@ a, a:link, a:visited {
           font-weight: 300;
           font-size: 16px; }
     .main .sidebar .menu {
-      background-color: #EFF4FF;
       font-size: 16px; }
       .main .sidebar .menu .menu__list {
         list-style: none;
@@ -97,6 +98,30 @@ a, a:link, a:visited {
             filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); }
           .main .sidebar .menu .menu__list .active:hover {
             background: linear-gradient(to right, #436ADC, #0CA6DB); }
+    .main .sidebar .sidebar__btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #37A0EA;
+      width: 70%;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 40px 0 20px 10px;
+      cursor: pointer; }
+      .main .sidebar .sidebar__btn .sidebar__btn-left {
+        display: flex;
+        align-items: center; }
+        .main .sidebar .sidebar__btn .sidebar__btn-left h4 {
+          color: #ffffff;
+          border-left: 1px solid #fff;
+          padding: 5px 15px;
+          margin-left: 10px; }
+      .main .sidebar .sidebar__btn img {
+        display: block;
+        max-width: 20px;
+        max-height: 20px; }
+      .main .sidebar .sidebar__btn:hover {
+        box-shadow: 0px 0px 10px 0px rgba(67, 107, 220, 0.35); }
   .main .screen {
     width: 75%;
     background-color: #944747; }
