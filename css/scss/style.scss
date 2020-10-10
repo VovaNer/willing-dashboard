@@ -75,7 +75,6 @@ a, a:link, a:visited {
                 .header__btns-icons {
                     display: block;
                     max-width: 100%;
-                    cursor: pointer;
                 }
 
                 &:last-child {
@@ -87,7 +86,7 @@ a, a:link, a:visited {
         .screen {
             position: absolute;
             width: 98%;
-            height: 86vh ;
+            height: 86vh;
             background-color: #fff;
             top: 120%;
             display: flex;

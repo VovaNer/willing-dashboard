@@ -55,8 +55,7 @@ a, a:link, a:visited {
         padding-right: 20px; }
         .header .header__right .header__btns div .header__btns-icons {
           display: block;
-          max-width: 100%;
-          cursor: pointer; }
+          max-width: 100%; }
         .header .header__right .header__btns div:last-child {
           border-right: 0;
           margin-right: 0; }
