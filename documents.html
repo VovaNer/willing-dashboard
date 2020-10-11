@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willing-Dashboard</title>
+    <script src="https://kit.fontawesome.com/04d3030b7b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,7 +17,7 @@
                 
                 <div class="header__name">
                     <div class="header__line"></div>
-                    <h4>Home</h4>
+                    <h4>Documents</h4>
                 </div>
                 <div class="header__btns">
                     <div><a href="#"><img class="header__btns-icons" src="img/header-quest.png" alt=""></a></div>
@@ -24,14 +25,42 @@
                     <div><a href="#"><img class="header__btns-icons" src="img/header-settings.png" alt=""></a></div>
                 </div>
                 <div class="screen">
-                    <div class="screen__inner">
-                        <div class="screen__hello">
-                            <h2 class="screen__welcome">Welcome!</h2>
-                            <h2 class="screen__user">Carolina Mayer</h2>
-                            <div class="screen__logo">
-                                <img src="img/screen-logo.png" alt="screen-logo">
+                     <div class="screen__controls"> 
+                        <div class="screen__option-category screen__option-box">
+                            <div class="option__select option__select-category">
+                                <h5>Category</h5>
+                            </div>
+                            <div class="option__dropdown option__dropdown-category">
+                                <ul>
+                                    <li>Show All</li>
+                                    <li>Financial</li>
+                                    <li>Technology</li>
+                                    <li>Healthcare</li>
+                                </ul>
                             </div>
                         </div>
+
+                        <div class="screen__option-filter screen__option-box">
+                            <div class="option__select option__select-filter">
+                                <h5>Filters</h5>
+                            </div>
+                            <div class="option__dropdown option__dropdown-filter">
+                                <ul>
+                                    <li>Show All</li>
+                                    <li>Type</li>
+                                    <li>Date</li>
+                                    <li>Status</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="screen_controls-search">
+                            <input type="text" placeholder="Search...">
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="screen__controls-btn"></div>
                     </div>
                 </div>
             </div>
@@ -51,13 +80,13 @@
     <section class="menu">
             <ul class="menu__list">
                 <a href="index.html">
-                    <li class="menu__link active">
+                    <li class="menu__link">
                         <div class="menu__link1 menu__elem"></div>
                         <h4>Home</h4>
                     </li>
                 </a>
                 <a href="documents.html">
-                    <li class="menu__link">
+                    <li class="menu__link active">
                     <div class="menu__link2 menu__elem"></div>
                     <h4>Documents</h4>
                 </li>
@@ -105,5 +134,6 @@
             </div>
     </section>
     
+    <script src="scripts/script.js"></script>
 </body>
 </html>
