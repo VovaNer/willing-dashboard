@@ -26,14 +26,14 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   display: flex; }
   .header .logo {
-    width: 25%; }
+    width: 20%; }
     .header .logo img {
       width: 60%;
       margin-left: 20px; }
   .header .header__right {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
     padding: 0 0 0 30px;
     position: relative; }
     .header .header__right .header__name {
@@ -103,23 +103,19 @@ h1, h2, h3, h4, h5, h6 {
           width: 20%;
           position: relative;
           font-weight: 600;
-          font-size: 16px;
-          cursor: pointer; }
+          font-size: 16px; }
           .header .header__right .screen .screen__controls .screen__option-box h5 {
             font-weight: 500;
             color: #575A63; }
           .header .header__right .screen .screen__controls .screen__option-box .option__select, .header .header__right .screen .screen__controls .screen__option-box .option__dropdown {
             box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15); }
-          .header .header__right .screen .screen__controls .screen__option-box .option__select-active {
-            box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25); }
-            .header .header__right .screen .screen__controls .screen__option-box .option__select-active h5 {
-              color: #37A0EA; }
           .header .header__right .screen .screen__controls .screen__option-box .option__dropdown {
             position: absolute;
             top: 100%;
             width: 100%;
             border-radius: 0 0 15px 15px;
             opacity: 0;
+            display: none;
             transition: all .3s ease-in-out; }
             .header .header__right .screen .screen__controls .screen__option-box .option__dropdown ul {
               list-style: none;
@@ -133,44 +129,71 @@ h1, h2, h3, h4, h5, h6 {
                   background-color: #EFF4FF; }
                 .header .header__right .screen .screen__controls .screen__option-box .option__dropdown ul li:last-child {
                   border-radius: 0 0 15px 15px; }
+          .header .header__right .screen .screen__controls .screen__option-box .option__select-active {
+            box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25);
+            display: block; }
+            .header .header__right .screen .screen__controls .screen__option-box .option__select-active h5 {
+              color: #37A0EA; }
           .header .header__right .screen .screen__controls .screen__option-box .option__select {
             background: #fff url("../img/select-arrow.png") 95% center no-repeat;
             background-size: 12px 9px;
             border-radius: 15px;
-            padding: 8px 12px 7px 14px;
-            transition: all .3s ease-in-out; }
+            padding: 11px 12px 10px 14px;
+            transition: all .3s ease-in-out;
+            cursor: pointer; }
         .header .header__right .screen .screen__controls .screen__option-filter {
           margin-left: 30px; }
         .header .header__right .screen .screen__controls .screen_controls-search {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          max-width: 20%;
+          max-width: 5%;
           height: 40px;
           border-radius: 15px;
           margin-left: 30px;
-          padding: 10px;
-          background-color: #fff; }
+          padding: 10px 15px;
+          cursor: pointer;
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+          background-color: #0CA6DB;
+          transition: all 0.4s ease-in-out; }
           .header .header__right .screen .screen__controls .screen_controls-search a {
-            color: #0CA6DB;
-            font-weight: 300; }
+            color: #fff; }
           .header .header__right .screen .screen__controls .screen_controls-search input {
             border: none;
             padding: 7px 0px;
-            outline: none; }
+            outline: none;
+            width: 0px;
+            background-color: #0CA6DB;
+            transition: all 0.4s ease-in-out; }
         .header .header__right .screen .screen__controls .search-active {
+          background-color: #fff;
           box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25);
-          background-color: #0CA6DB;
-          color: #fff;
-          padding: 10px 15px; }
+          transition: all 0.4s ease-in-out;
+          max-width: 20%; }
           .header .header__right .screen .screen__controls .search-active a {
-            color: #fff;
+            color: #0CA6DB;
             font-weight: 300; }
           .header .header__right .screen .screen__controls .search-active input {
-            width: 0; }
+            background-color: #fff;
+            width: 80%; }
+        .header .header__right .screen .screen__controls .screen__controls-btn {
+          margin-left: auto;
+          background-color: #37A0EA;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          padding: 0 15px;
+          border-radius: 15px; }
+          .header .header__right .screen .screen__controls .screen__controls-btn h4 {
+            font-weight: 600;
+            font-size: 15px;
+            color: #fff; }
+          .header .header__right .screen .screen__controls .screen__controls-btn:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15); }
 
 .avatar .avatar__box {
-  width: 25%;
+  width: 20%;
   padding: 40px 0 40px 75px;
   background: url("../img/avatar.png") left center no-repeat;
   color: #fff; }
@@ -194,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
   font-size: 16px;
-  width: 40%; }
+  width: 30%; }
   .menu .menu__list {
     list-style: none;
     padding: 10px 0; }

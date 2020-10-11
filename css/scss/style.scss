@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     
     .logo {
-        width: 25%;
+        width: 20%;
         
         img {
             width: 60%;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     .header__right {
         display: flex;
         justify-content: space-between;
-        width: 75%;
+        width: 80%;
         padding: 0 0 0 30px;
 
         position: relative;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
                     position: relative;
                     font-weight: 600;
                     font-size: 16px;
-                    cursor: pointer;
+                    
                     
 
                     h5 {
@@ -157,20 +157,13 @@ h1, h2, h3, h4, h5, h6 {
                         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
                     }
 
-                    .option__select-active {
-                        box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25);
-
-                        h5 {
-                            color: #37A0EA;
-                        }
-                    }
-
                     .option__dropdown {
                         position: absolute;
                         top: 100%;
                         width: 100%;
                         border-radius: 0 0 15px 15px;
                         opacity: 0;
+                        display: none;
                         transition: all .3s ease-in-out;
 
                         ul {
@@ -195,12 +188,22 @@ h1, h2, h3, h4, h5, h6 {
                         }
                     }
 
+                    .option__select-active {
+                        box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25);
+                        display: block;
+
+                        h5 {
+                            color: #37A0EA;
+                        }
+                    }
+
                     .option__select {
                         background: #fff url('../img/select-arrow.png') 95% center no-repeat;
                         background-size: 12px 9px;
                         border-radius: 15px;
-                        padding: 8px 12px 7px 14px;
+                        padding: 11px 12px 10px 14px;
                         transition: all .3s ease-in-out;
+                        cursor: pointer;
                     }
                 }   
 
@@ -212,40 +215,69 @@ h1, h2, h3, h4, h5, h6 {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    max-width: 20%;
+                    max-width: 5%;
                     height: 40px;
                     border-radius: 15px;
                     margin-left: 30px;
-                    padding: 10px;
-                    background-color: #fff;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+                    background-color: #0CA6DB;
+                    transition: all 0.4s ease-in-out;
 
                     a {
-                        color: #0CA6DB;
-                        font-weight: 300;
+                        color: #fff;
                     }
 
                     input {
                         border: none;
                         padding: 7px 0px;
                         outline: none;
+                        width: 0px;
+                        background-color: #0CA6DB;
+                        transition: all 0.4s ease-in-out;
                     }
+
 
                     
                 }
 
                 .search-active {
+                    background-color: #fff;
                     box-shadow: 0px 0px 6px 0px rgba(39, 174, 222, 0.25);
-                    background-color: #0CA6DB;
-                    color: #fff;
-                    padding: 10px 15px;
+                    transition: all 0.4s ease-in-out;
+                    max-width: 20%;
                     
                     a {
-                        color: #fff;
+                        color: #0CA6DB;
                         font-weight: 300;
                     }
 
+                    
                     input {
-                        width: 0;
+                        background-color: #fff;
+                        width: 80%;
+                    }
+                }
+
+                .screen__controls-btn {
+                    margin-left: auto;
+                    background-color: #37A0EA;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    border-radius: 15px;
+
+                    h4 {
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
                     }
                 }
             }
@@ -255,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .avatar {
     .avatar__box {
-        width: 25%;
+        width: 20%;
         padding: 40px 0 40px 75px;
         background: url('../img/avatar.png') left center no-repeat;
         color: #fff;
@@ -289,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
     font-size: 16px;
-    width: 40%;
+    width: 30%;
 
     .menu__list {
         list-style: none;
