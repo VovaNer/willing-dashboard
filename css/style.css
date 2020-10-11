@@ -263,7 +263,9 @@ h1, h2, h3, h4, h5, h6 {
                 border: 1px solid #C4C4C4; }
         .header .header__right .screen .screen__table table {
           width: 100%;
-          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15); }
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+          border-radius: 0 0 5px 5px;
+          padding-bottom: 10px; }
           .header .header__right .screen .screen__table table tr {
             text-align: left; }
             .header .header__right .screen .screen__table table tr:first-child {
