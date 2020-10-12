@@ -125,7 +125,8 @@ h1, h2, h3, h4, h5, h6 {
               .header .header__right .screen .screen__controls .screen__option-box .option__dropdown ul li {
                 font-weight: 400;
                 padding: 7px 12px 7px 14px;
-                color: #6D6D6D; }
+                color: #6D6D6D;
+                cursor: pointer; }
                 .header .header__right .screen .screen__controls .screen__option-box .option__dropdown ul li:hover {
                   background-color: #EFF4FF; }
                 .header .header__right .screen .screen__controls .screen__option-box .option__dropdown ul li:last-child {
